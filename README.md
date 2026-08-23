@@ -143,3 +143,6 @@ src/
 ## 7. Design notes
 
 Dark charcoal base (`#0A0B0F`) with electric blue, violet, and cyan accents used sparingly. Headings use Space Grotesk, body text uses Inter, and data/stats use JetBrains Mono — rendered as small "readout" chips (e.g. `CGPA 8.95/10`, `100% test accuracy`) instead of arbitrary skill-percentage bars, since these are the real, resume-sourced numbers. Motion respects `prefers-reduced-motion` throughout.
+
+# Live Demo
+https://my-portfolio-three-iota-87.vercel.app/#contact
