@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Download } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Download } from 'lucide-react';
 import { personalInfo } from '../../data/portfolioData.js';
 import { useScrollReveal } from '../../hooks/useScrollReveal.js';
 
 export default function Contact() {
   const [ref, visible] = useScrollReveal({ threshold: 0.2 });
-  const { email, links } = personalInfo;
+  const { email, phone, links } = personalInfo;
 
   return (
     <section
@@ -34,6 +34,13 @@ export default function Contact() {
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-electric text-base font-medium text-sm hover:brightness-110 transition focus-ring shadow-glow"
           >
             <Mail size={16} /> {email}
+          </a>
+
+          <a
+            href={`tel:${phone.replace(/[^+\d]/g, '')}`}
+            className="flex items-center gap-2 px-5 py-3 rounded-full border border-base-border text-ink-dim hover:text-ink hover:border-electric/40 transition-colors focus-ring"
+          >
+            <Phone size={16} /> {phone}
           </a>
 
           {links.linkedin ? (
