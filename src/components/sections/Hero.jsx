@@ -4,7 +4,7 @@ import { personalInfo } from '../../data/portfolioData.js';
 import { useReducedMotion } from '../../hooks/useReducedMotion.js';
 
 const READOUTS = [
-  { label: 'CGPA', value: '8.95 / 10', color: '#3E7BFA' },
+  { label: 'CGPA', value: '8.5 / 10', color: '#3E7BFA' },
   { label: 'IRIS MODEL ACCURACY', value: '100%', color: '#22D3EE' },
   { label: 'AI/ML PREP COURSES', value: '19', color: '#8B5CF6' },
 ];

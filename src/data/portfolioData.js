@@ -9,13 +9,14 @@ export const personalInfo = {
   role: 'AI/ML Developer & Data Science Enthusiast',
   tagline: 'Computer Science Engineering student specializing in AI & ML.',
   summary:
-    "B.Tech Computer Science (AI & ML) student with a strong academic record (CGPA: 8.95/10) and hands-on experience building AI-powered and data-driven applications. Proficient in Python, machine learning, and data analysis, with practical exposure to end-to-end model development, exploratory data analysis, and interactive web deployment via Streamlit.",
+    "B.Tech Computer Science (AI & ML) student with a strong academic record (CGPA: 8.5/10) and hands-on experience building AI-powered and data-driven applications. Proficient in Python, machine learning, and data analysis, with practical exposure to end-to-end model development, exploratory data analysis, and interactive web deployment via Streamlit.",
   location: 'Gurugram, Haryana',
   phone: '+91-9319269447',
-  email: 'mc6968504@gmail.com',
+  email: 'muskanchauhan8509@gmail.com',
   links: {
-    linkedin: '', // PLACEHOLDER — add real LinkedIn URL
-    github: '', // PLACEHOLDER — add real GitHub URL
+    linkedin: 'https://www.linkedin.com/in/muskan-chauhan-180698326/',
+    github: 'https://github.com/muskan-code-sketch',
+    portfolio: 'https://my-portfolio-three-iota-87.vercel.app/#contact',
     resumeFile: '/resume.pdf', // PLACEHOLDER — drop your resume PDF into /public
   },
   interests: [
@@ -33,7 +34,7 @@ export const education = [
     degree: 'B.Tech. in Computer Science Engineering (AI & ML)',
     institution: 'Dronacharya College of Engineering, Khetawas',
     period: '2024 – Present',
-    score: 'CGPA: 8.95 / 10',
+    score: 'CGPA: 8.5 / 10',
   },
   {
     id: 'xii',
@@ -66,11 +67,13 @@ export const experience = [
   },
   {
     id: 'msil',
-    role: 'HR/FRAQ Intern',
-    org: 'Maruti Suzuki India Limited (MSIL) — Gurugram Plant',
-    period: '1 Month Internship',
+    role: 'HR Intern – FRAQ Department',
+    org: 'Maruti Suzuki India Limited, Gurugram Plant',
+    period: 'July 2026 | 1 Month',
     points: [
-      'Completed a one-month internship at Maruti Suzuki India Limited (MSIL), Gurugram Plant, gaining practical exposure to HR/FRAQ operations and workplace processes.',
+      'Gained hands-on corporate experience working with real-world employee dormitory datasets.',
+      'Verified accommodation records to identify discrepancies in room and bed allocation.',
+      'Supported data accuracy and validation for employee accommodation management.',
     ],
   },
 ];
@@ -93,8 +96,8 @@ export const projects = [
       { label: 'Samples', value: '150' },
       { label: 'Top features', value: '86%' },
     ],
-    githubUrl: '', // PLACEHOLDER — add real GitHub repo link
-    demoUrl: '', // PLACEHOLDER — resume references a live demo; add the real URL
+    githubUrl: 'https://github.com/muskan-code-sketch/iris_data_analysis',
+    demoUrl: '', // add the live Streamlit demo URL if you have one
   },
   {
     id: 'web-scraping',
@@ -108,15 +111,15 @@ export const projects = [
       'Designed a modular pipeline enabling scalable insight generation and data-driven decision making from harvested web data.',
     ],
     metrics: [],
-    githubUrl: '', // PLACEHOLDER
-    demoUrl: '', // PLACEHOLDER — resume references a live demo; add the real URL
+    githubUrl: 'https://github.com/muskan-code-sketch/web-sraping',
+    demoUrl: '',
   },
   {
     id: 'ai-price-optima',
     title: 'AI Price Optima',
     description:
       'An AI-powered pricing optimization application built during the Infosys Springboard Virtual Internship 6.0.',
-    tech: ['Python', 'Pandas', 'Scikit-learn'],
+    tech: ['Python', 'Pandas', 'Streamlit', 'XGBoost', 'LightGBM'],
     highlights: [
       'Sourced a Kaggle dataset of 1,00,000 rows and 14–16 columns for model training.',
       'Reduced the dataset to 10,000 rows and 8–10 columns through data cleaning and feature selection, optimizing it for focused model training.',
@@ -126,8 +129,38 @@ export const projects = [
       { label: 'Raw rows', value: '1,00,000' },
       { label: 'Refined rows', value: '10,000' },
     ],
-    githubUrl: '', // PLACEHOLDER
-    demoUrl: '',
+    githubUrl: 'https://github.com/muskan-code-sketch/AIPriceOptima',
+    demoUrl: 'https://aipriceoptima-lprks2las8jxq2n6pmkkq8.streamlit.app/',
+  },
+  {
+    id: 'deadlinezero',
+    title: 'DeadLineZero',
+    description:
+      'A website that helps you never miss a deadline, deployed live on Google Cloud Run.',
+    tech: ['TypeScript', 'Vite', 'Node.js', 'Gemini API'],
+    highlights: [
+      'Built a deadline-tracking web application so users can keep on top of their due dates.',
+      'Integrated the Gemini API and built the app with TypeScript, Vite and Node.js.',
+      'Deployed the application live on Google Cloud Run.',
+    ],
+    metrics: [],
+    githubUrl: 'https://github.com/muskan-code-sketch/DeadLineZero',
+    demoUrl: 'https://deadlinezero-278879915722.asia-southeast1.run.app/',
+  },
+  {
+    id: 'damage-claim-verification',
+    title: 'Damage Claim Verification',
+    description:
+      'A browser-based Evidence Review Desk that checks damage claims for cars, laptops and packages against fixed evidence rules.',
+    tech: ['JavaScript', 'HTML', 'CSS'],
+    highlights: [
+      'Reviews submitted photos, claimant history and the customer conversation to assess whether a claim is supported by the evidence.',
+      'Fully deterministic and transparent: no AI model or API key is used, and every decision shows the rule that produced it.',
+      'Photos are screened locally in the browser for size, lighting and sharpness and are never uploaded.',
+    ],
+    metrics: [],
+    githubUrl: '',
+    demoUrl: 'https://damageclaimverfication.netlify.app/#review',
   },
 ];
 
@@ -157,6 +190,11 @@ export const skills = {
 
 export const certifications = [
   {
+    id: 'infosys-azure-java',
+    title: 'Microservices Development on Azure with Java',
+    issuer: 'Infosys',
+  },
+  {
     id: 'tcs-ion',
     title: 'Communication and Presentation Skills',
     issuer: 'TCS iON',
@@ -165,12 +203,6 @@ export const certifications = [
     id: 'simplilearn',
     title: 'Web Development Course',
     issuer: 'Simplilearn',
-  },
-  {
-    id: 'infosys-springboard',
-    title: '19 AI & ML Preparatory Courses',
-    issuer: 'Infosys Springboard',
-    note: 'Qualified for Infosys Virtual Internship 6.0',
   },
 ];
 

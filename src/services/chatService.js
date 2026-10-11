@@ -79,7 +79,7 @@ function answerFromKnowledgeBase(rawQuery) {
 
   if (/maruti|msil|hr|fraq/.test(q)) {
     const msil = kb.experience.find((e) => e.id === 'msil');
-    return msil ? `${msil.role} at ${msil.org} (${msil.period}). ${msil.points[0]}` : FALLBACK_MESSAGE;
+    return msil ? `${msil.role}, ${msil.org} (${msil.period}).\n${msil.points.join('\n')}` : FALLBACK_MESSAGE;
   }
 
   if (/infosys|internship|springboard|virtual internship/.test(q)) {
@@ -133,10 +133,9 @@ function answerFromKnowledgeBase(rawQuery) {
     return `Muskan pairs a strong academic record (${kb.education[0].score}) with hands-on ML project work — including a Random Forest model that reached 100% test accuracy on the Iris dataset — and practical exposure to data pipelines from her Infosys Springboard internship. She's proficient in ${skillsList}, and is actively focused on ${kb.interests.join(', ')}.`;
   }
 
-  if (/contact|email|reach|linkedin|github/.test(q)) {
-    return `You can reach Muskan at ${kb.personalInfo.email}${
-      kb.personalInfo.links.linkedin ? ` or on LinkedIn: ${kb.personalInfo.links.linkedin}` : ''
-    }.`;
+  if (/contact|email|reach|linkedin|github|phone/.test(q)) {
+    const { email, phone, links } = kb.personalInfo;
+    return `You can reach Muskan at ${email} or ${phone}. LinkedIn: ${links.linkedin} — GitHub: ${links.github}`;
   }
 
   return FALLBACK_MESSAGE;
