@@ -9,6 +9,22 @@ export default function ProjectCard({ project, index, visible }) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="group rounded-2xl border border-base-border bg-base-surface/60 p-6 sm:p-7 flex flex-col h-full transition-all hover:border-electric/30 hover:-translate-y-1 hover:shadow-glow"
     >
+      {project.image && project.demoUrl && (
+        <a
+          href={project.demoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open live demo of ${project.title}`}
+          className="block mb-5 overflow-hidden rounded-xl border border-base-border focus-ring"
+        >
+          <img
+            src={project.image}
+            alt={`${project.title} live demo interface`}
+            loading="lazy"
+            className="w-full aspect-[16/9] object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+          />
+        </a>
+      )}
       <h3 className="font-display font-semibold text-xl text-ink">
         {project.title}
       </h3>

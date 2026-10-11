@@ -116,6 +116,7 @@ export const projects = [
   },
   {
     id: 'ai-price-optima',
+    image: '/projects/ai-price-optima.png',
     title: 'AI Price Optima',
     description:
       'An AI-powered pricing optimization application built during the Infosys Springboard Virtual Internship 6.0.',
@@ -134,6 +135,7 @@ export const projects = [
   },
   {
     id: 'deadlinezero',
+    image: '/projects/deadlinezero.png',
     title: 'DeadLineZero',
     description:
       'A website that helps you never miss a deadline, deployed live on Google Cloud Run.',
@@ -149,6 +151,7 @@ export const projects = [
   },
   {
     id: 'damage-claim-verification',
+    image: '/projects/damage-claim-verification.png',
     title: 'Damage Claim Verification',
     description:
       'A browser-based Evidence Review Desk that checks damage claims for cars, laptops and packages against fixed evidence rules.',
